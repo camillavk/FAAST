@@ -3,13 +3,8 @@ class Carriage
 	DEFAULT_CAPACITY = 40
 
 	def initialize
-		# @capacity = capacity
 		@passenger = []
 	end
-
-	# def capacity
-	# 	@capacity
-	# end
 
 	def board(passenger)
 		@passenger << passenger

@@ -7,10 +7,7 @@ let (:carriage) { Carriage.new }
 let (:passenger) { Passenger.new }
 
 	it "should be able to hold Passengers" do
-		2.times do
-			passenger = Passenger.new
-			carriage.board(passenger)
-		end
+		2.times {	carriage.board(passenger)	}
 		expect(carriage.passenger_count).to eq(2)
 	end
 

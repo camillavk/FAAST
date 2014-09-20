@@ -5,7 +5,6 @@ describe Station do
 
 let(:station) { Station.new }
 let(:train) { Train.new }
-let(:carriage) { double :carriage }
 
 	it "should be able to park Trains" do
 		5.times { station.park(train) }
