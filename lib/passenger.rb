@@ -1,5 +1,9 @@
 class Passenger
 
+	# def initialize
+	# 	@carriage = []
+	# end
+
 	def in_station? 
 		!@station.nil?
 	end
