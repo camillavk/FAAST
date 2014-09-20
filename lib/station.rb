@@ -16,4 +16,10 @@ def initialize
 		@trains.pop
 	end
 
+	def transfer(station)
+		@trains.each do |train|
+			station.park(release(train))
+		end
+	end
+
 end

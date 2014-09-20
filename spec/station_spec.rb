@@ -12,20 +12,14 @@ let(:carriage) { double :carriage }
 		expect(station.train_count).to eq(5)
 	end
 
-	it "should be able to release Trains" do
-		5.times { station.park(train) }
-		station.release(train)
-		expect(station.train_count).to eq(4)
+	it "should be able to transport trains from one station to another" do
+		old_street = Station.new
+		london_bridge = Station.new
+		old_street.park(train)
+		expect(old_street.train_count).to eq(1)
+		old_street.transfer(london_bridge)
+		expect(old_street.train_count).to eq(0)
+		expect(london_bridge.train_count).to eq(1)
 	end
-
-			# it "should be able to transport Carriages from Station to Train" do
-	# 		# allow(station1).to receive(:dock).and_return(true)
-	# 		# allow(station1).to receive(:transfer).and_return(true)
-	# 		# allow(station1).to receive(:carriage_count).and_return(0)
-	# 		5.times { station.dock(carriage) }
-	# 		station.transfer(train)
-	# 		expect(station.carriage_count).to eq(0)
-	# 		expect(train.carriage_count).to eq(5)
-	# 	end
 
 end
