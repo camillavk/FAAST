@@ -20,4 +20,8 @@ class Passenger
 		@carriage = carriage
 	end
 
+	def disembark(carriage)
+		@carriage = nil
+	end
+
 end
