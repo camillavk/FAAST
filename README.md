@@ -1,6 +1,6 @@
 Scenario:
 
-Create a tueb system to be deployed into the undergound. The FAAST system needs to cater for the following;
+Create a tube system to be deployed into the undergound. The FAAST system needs to cater for the following;
 - There will be a number of trains inside the system
 - Trains will travel from station to station
 - Inside of a station, when the train stops, passengers will alight and enter the carriages of the train
