@@ -33,10 +33,11 @@ let (:passenger) { Passenger.new }
 		expect(carriage.passenger_count).to eq(0)
 		end
 
-	# # it "should reject passengers if it is full" do
-	# # 	40.times { passenger.board(carriage) }
-	# 	expect(carriage.passenger_count).to eq(40)
-	# 	# expect(lambda {carriage.full?}).to raise_error(RuntimeError)
-	# end
+	it "should reject passengers if it is full" do
+		40.times { passenger.board(carriage) }
+		40.times { carriage.board(passenger) }
+		expect(carriage.passenger_count).to eq(40)
+		expect(lambda {carriage.full?}).to raise_error(RuntimeError)
+	end
 
 end

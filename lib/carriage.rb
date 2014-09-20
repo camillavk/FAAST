@@ -23,8 +23,8 @@ class Carriage
 		@passenger.count
 	end
 
-	# def full?
-	# 	raise "Sorry, this carriage is already full" if passenger_count == DEFAULT_CAPACITY
-	# end
+	def full?
+		raise "Sorry, this carriage is already full" if passenger_count == DEFAULT_CAPACITY
+	end
 
 end
