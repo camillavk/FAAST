@@ -12,5 +12,4 @@ class Train
 		@carriages << carriage
 	end
 
-
 end
