@@ -8,4 +8,8 @@ class Passenger
 		@station = station
 	end
 
+	def touch_out(station)
+		@station = nil
+	end
+
 end
