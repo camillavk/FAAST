@@ -12,4 +12,8 @@ def initialize
 		@trains << train
 	end
 
+	def release(train)
+		@trains.pop
+	end
+
 end
