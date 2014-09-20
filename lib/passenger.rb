@@ -12,4 +12,12 @@ class Passenger
 		@station = nil
 	end
 
+	def in_carriage?
+		!@carriage.nil?
+	end
+
+	def board(carriage)
+		@carriage = carriage
+	end
+
 end
